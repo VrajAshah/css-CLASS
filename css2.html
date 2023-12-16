@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1 {
+            float: left;
+            height: 10vh;
+            width: 5vw;
+            transition-duration: 2s;
+            background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 198, 255), rgb(255, 133, 255), rgb(255, 69, 255), rgb(255, 15, 255));
+
+        }
+
+        .d2 {
+            float: left;
+            height: 500px;
+            width: 500px;
+            transition-duration: 2s;
+            background: radial-gradient(circle, rgb(255, 255, 255) 20%, rgb(177, 169, 255) 50%, rgb(116, 101, 255) 70%, rgb(62, 40, 255) 80%, rgb(19, 3, 250) 90%);
+            animation-name: example;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            border-radius: 47%;
+            
+            
+            
+        }
+
+        @keyframes example {
+            from {
+                background: radial-gradient(circle, rgb(255, 255, 255) , rgb(177, 169, 255) , rgb(116, 101, 255) , rgb(62, 40, 255) , rgb(19, 3, 250) );
+            }
+
+            to {
+                background: radial-gradient(circle, rgb(255, 255, 255), rgb(255, 198, 255), rgb(255, 133, 255), rgb(255, 69, 255), rgb(255, 15, 255));
+                transform: rotate(360deg);
+            }
+        }
+
+        /* .d3{
+            
+            height: 10vh;
+            width: 5vw;
+            transition-duration: 1s;
+            background: linear-gradient(to left,rgb(255, 255, 255),rgb(255, 198, 255),rgb(255, 133, 255),rgb(255, 69, 255),rgb(255, 15, 255));
+        } */
+        div:hover {
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d">
+
+    </div>
+    <div class="d2">
+
+    </div>
+    <div class="d3">
+
+    </div>
+</body>
+
+</html>
